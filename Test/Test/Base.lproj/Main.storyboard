@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0gW-lt-ykC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="XFa-Xb-OQu">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0gW-lt-ykC" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IXo-3l-E5c"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="f1a-29-hPF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.85834637806756131" green="1" blue="0.12089377872295071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.25124013752327179" green="0.83574717161475998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="y2M-NM-LfJ" kind="relationship" relationship="viewControllers" id="LWx-D2-vGV"/>
+                        <segue destination="EU7-q1-WE1" kind="relationship" relationship="viewControllers" id="OvZ-gB-GX6"/>
+                        <segue destination="eLv-DK-Wr3" kind="relationship" relationship="viewControllers" id="gVc-jC-LPt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pse-RR-8TJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-990" y="30"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="aMd-F9-tZN">
+            <objects>
+                <viewController id="y2M-NM-LfJ" customClass="ViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GOc-GM-qxQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sH0-uN-ueC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P1c-ew-YMc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UQO-Xi-X3U">
+                                <rect key="frame" x="0.0" y="209" width="375" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UQO-Xi-X3U" secondAttribute="height" multiplier="15:8" id="3jy-t7-O92"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="TyX-fA-UTb" customClass="ItemFlowLayout" customModule="Test" customModuleProvider="target">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="TZm-nC-chv" customClass="ItemCell" customModule="Test" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7IR-Bf-3Ip">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                                    <color key="backgroundColor" red="0.85834637810000003" green="1" blue="0.1208937787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="7IR-Bf-3Ip" secondAttribute="trailing" id="4hF-3W-ebc"/>
+                                            <constraint firstItem="7IR-Bf-3Ip" firstAttribute="leading" secondItem="TZm-nC-chv" secondAttribute="leading" id="QV2-AG-y4J"/>
+                                            <constraint firstAttribute="bottom" secondItem="7IR-Bf-3Ip" secondAttribute="bottom" id="dD4-S2-2n6"/>
+                                            <constraint firstItem="7IR-Bf-3Ip" firstAttribute="top" secondItem="TZm-nC-chv" secondAttribute="top" id="f3u-b7-i2a"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="y2M-NM-LfJ" id="Euh-qh-Atn"/>
+                                    <outlet property="delegate" destination="y2M-NM-LfJ" id="6aF-lM-6t2"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UQO-Xi-X3U" firstAttribute="centerY" secondItem="P1c-ew-YMc" secondAttribute="centerY" id="5Gi-Kh-ios"/>
+                            <constraint firstItem="UQO-Xi-X3U" firstAttribute="leading" secondItem="P1c-ew-YMc" secondAttribute="leading" id="oyf-2f-IgV"/>
+                            <constraint firstAttribute="trailing" secondItem="UQO-Xi-X3U" secondAttribute="trailing" id="qWF-fO-1EU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Leanpub Filled-50" selectedImage="Leanpub-50" id="hBl-kr-itQ" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="1Tc-GK-fhq" id="f8L-51-rI2"/>
+                        </connections>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="ItemView" destination="UQO-Xi-X3U" id="Xn8-4S-72T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkC-8i-tNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="1Tc-GK-fhq" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
+                            <color key="value" red="0.85834637810000003" green="1" blue="0.1208937787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.85834637810000003" green="1" blue="0.1208937787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-196" y="-296"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Dh9-L6-oxW">
+            <objects>
+                <navigationController id="eLv-DK-Wr3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Leanpub Filled-50" id="6mf-aI-YZy" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="nhQ-jO-EKw" id="mcn-tz-Zju"/>
+                        </connections>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="DJl-U6-NFw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.86666666670000003" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="p3d-7p-PkR" kind="relationship" relationship="rootViewController" id="FeV-ny-9sh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8q-PP-ply" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="nhQ-jO-EKw" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
+                            <color key="value" red="0.85834637810000003" green="1" blue="0.1208937787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.85834637810000003" green="1" blue="0.1208937787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-1826" y="800"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="wNc-S9-rIG">
+            <objects>
+                <viewController id="p3d-7p-PkR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bS8-BF-sVu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tt4-tE-Pf9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t99-vc-zbb">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Item" id="fUt-F3-xk4">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Bs5-S7-rC8">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qQR-18-1U0">
+                                <rect key="frame" x="16" y="0.0" width="83" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Center">
+                                    <color key="titleColor" red="1" green="0.86666666670000003" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <color key="tintColor" red="1" green="0.86666666670000003" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="coA-FK-aZN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="meP-Rh-sxk">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="More">
+                                    <color key="titleColor" red="1" green="0.86666666670000003" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fd2-yw-0wa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1826" y="1502"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="9Vx-oB-Gmw">
+            <objects>
+                <viewController id="EU7-q1-WE1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="trw-IN-i58"/>
+                        <viewControllerLayoutGuide type="bottom" id="0dK-3D-BF7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Er5-Pw-VOB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Title" image="Microsoft Dynamics CRM Filled-50" selectedImage="Microsoft Dynamics CRM-50" id="qV9-rw-QuQ" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="j34-qm-da6" id="4iA-9S-fuJ"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ik2-OW-XST" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="j34-qm-da6" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
+                            <color key="value" red="0.85834637810000003" green="1" blue="0.1208937787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.85834637810000003" green="1" blue="0.1208937787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-196" y="455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Leanpub Filled-50" width="50" height="50"/>
+        <image name="Leanpub-50" width="50" height="50"/>
+        <image name="Microsoft Dynamics CRM Filled-50" width="50" height="50"/>
+        <image name="Microsoft Dynamics CRM-50" width="50" height="50"/>
+    </resources>
+</document>
