@@ -7,7 +7,7 @@ target 'Test' do
 
 pod 'Alamofire', '~> 4.3.0'
 pod 'RAMAnimatedTabBarController'
-
+pod 'XCGLogger','~> 4.0.0'
   target 'TestTests' do
     inherit! :search_paths
     # Pods for testing

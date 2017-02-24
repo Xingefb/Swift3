@@ -1,15 +1,20 @@
 PODS:
   - Alamofire (4.3.0)
   - RAMAnimatedTabBarController (2.1.1)
+  - XCGLogger (4.0.0):
+    - XCGLogger/Core (= 4.0.0)
+  - XCGLogger/Core (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3.0)
   - RAMAnimatedTabBarController
+  - XCGLogger (~> 4.0.0)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   RAMAnimatedTabBarController: 128e0d71dc802766de575a3c59c6fdcc8e2f921b
+  XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
 
-PODFILE CHECKSUM: e516bf5eceadbc539cc0edb59e04997e638fe567
+PODFILE CHECKSUM: ff28064e3aa3d11058a43d7f47a3a04875aabd4c
 
 COCOAPODS: 1.2.0

@@ -1,0 +1,3 @@
+[submodule "Test/XCGLogger"]
+	path = Test/XCGLogger
+	url = https://github.com/DaveWoodCom/XCGLogger.git
