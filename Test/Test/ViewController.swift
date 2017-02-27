@@ -11,13 +11,20 @@ import UIKit
 import Alamofire
 import RAMAnimatedTabBarController
 
+import QMUIKit
+
 class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     
     @IBOutlet weak var ItemView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let btn = QMUIButton.init(frame: CGRect.init(x: 80, y: 80, width: 80, height: 80))
+        btn.setTitle("hello", for: UIControlState.normal)
+        btn.sizeToFit()
+        view.addSubview(btn)
+        log.debug("hello")
         // Do any additional setup after loading the view, typically from a nib.
     }
     

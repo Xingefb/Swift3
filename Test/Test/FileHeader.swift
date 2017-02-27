@@ -59,7 +59,6 @@ let log: XCGLogger = {
     fileDestination.showFileName = true
     fileDestination.showLineNumber = true
     fileDestination.showDate = true
-    
     // Process this destination in the background
     fileDestination.logQueue = XCGLogger.logQueue
     
@@ -72,3 +71,5 @@ let log: XCGLogger = {
     
     return log
 }()
+
+

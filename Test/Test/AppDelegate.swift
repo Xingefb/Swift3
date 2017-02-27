@@ -8,7 +8,11 @@
 
 import UIKit
 
+import QMUIKit
+
+
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -31,6 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.configNavigationBarAndTabBar()
         
+        QMUIConfigurationTemplate.setupConfigurationTemplate()
+
         // Override point for customization after application launch.
         return true
     }
