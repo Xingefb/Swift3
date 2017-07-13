@@ -20,7 +20,7 @@ public class TheImage : NSObject {
         var w = 0.0
         var h = 0.0
         
-        if width > 50 {
+        if width < 50 {
             w = Double(width*2)
             h = Double(height*2)
         }else {

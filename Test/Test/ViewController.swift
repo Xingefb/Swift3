@@ -24,6 +24,85 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
 //        self.view .addSubview(view)
         
    
+        /*
+         1
+         数据统计 平台
+         数据分析 教师平台
+         提出方案 教师 （家长）
+         执行方案 学生 （家长 教师）
+         方案成果 平台展示 -> 学生 家长 教师
+         
+         成果分析
+         方案更改
+         执行方案
+         方案成果
+         
+         。。。 
+         
+         2
+         统一优质教学  哪个教师教的好 录成视频 远程教学 班内老师学习辅导
+         考试统一规定  方便阶段审核 数据分析 每周小考 每月中考 半年 大考
+         
+         家庭作业分析  放学后会出现本分作业抄袭现象 每天最后一节课统一做作业
+         
+         试卷统一分析  
+         
+         3
+         学校信息展示
+         录取分数
+         历年成绩
+         报考指导
+         平时缴费
+         参观路线
+         
+         4
+         学生信息展示
+         综合能力分析
+         学习成绩分析
+         爱好分析
+         考试成绩预测
+         考取学校预测
+         提分方案
+         
+         5
+         爱好培养
+         朋友圈
+         生活写真
+         个人作品
+         旅游史
+         
+         */
+        
+        /*
+         细分应用内容
+         数据统计 平台
+         
+         1 各科分数
+         2 各科总分比重
+         3 各科内容错题比重
+         4 成绩班级对比
+         5 成绩同学对比
+         6 成绩学校对比
+         
+         
+         数据分析 教师平台
+         
+         1 每科授课教师根据分数分析知识点的错误点 和解决方案
+         2 根据班级整体错误点分析 出 解决方案
+         3 和其余班解决方案对比 取长补短
+         4 班主任全班整体水平分析
+         5 试卷知识点分析
+         6 优秀学生答题方案分享
+    
+         方案成果
+        
+         1 重考试题乱序乱内容 重考成绩
+         2 错点重错率
+         3 成绩数据分析
+         4 方案效果占预计的百分比
+  
+         
+         */
         self.view.backgroundColor = .red
         
         let button = QMUILinkButton.init(frame: CGRect.init(x: 200, y: 200, width: 50, height: 200))
@@ -46,6 +125,11 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         image.image = TheImage.useFitImage(width: 60, height: 60)
         view.addSubview(image)
         
+        let image1 = UIImageView.init(frame: CGRect.init(x: 140, y: 60, width: 60, height: 60))
+        image1.image = UIImage.init(named: "screenShot20170713At102217AM.png")
+        image1.contentMode = .scaleAspectFit
+        view.addSubview(image1)
+
         log.debug("hello")
         // Do any additional setup after loading the view, typically from a nib.
     }
