@@ -20,10 +20,32 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        let view = TestView.init(frame: CGRect.init(x: 0, y: 0, width: 100, height: 100))
+//        self.view .addSubview(view)
+        
+   
+        self.view.backgroundColor = .red
+        
+        let button = QMUILinkButton.init(frame: CGRect.init(x: 200, y: 200, width: 50, height: 200))
+        button.underlineColor = UIColor.red
+        button.setTitle("first", for: UIControlState.normal)
+        view.addSubview(button)
+        
         let btn = QMUIButton.init(frame: CGRect.init(x: 80, y: 80, width: 80, height: 80))
         btn.setTitle("hello", for: UIControlState.normal)
         btn.sizeToFit()
+        btn.backgroundColor = UIColor.red
+        btn.layer.cornerRadius = 10
         view.addSubview(btn)
+        
+        let v = UIView.init(frame: CGRect.init(x: 70, y: 70, width: 80, height: 80))
+        v.backgroundColor = .yellow
+        view.addSubview(v)
+
+        let image = UIImageView.init(frame: CGRect.init(x: 60, y: 60, width: 60, height: 60))
+        image.image = TheImage.useFitImage(width: 60, height: 60)
+        view.addSubview(image)
+        
         log.debug("hello")
         // Do any additional setup after loading the view, typically from a nib.
     }

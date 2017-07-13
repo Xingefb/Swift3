@@ -92,12 +92,16 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/QMUIKit/QMUIKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RDVTabBarController/RDVTabBarController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SlideMenuControllerSwift/SlideMenuControllerSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/XCGLogger/XCGLogger.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/QMUIKit/QMUIKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RDVTabBarController/RDVTabBarController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SlideMenuControllerSwift/SlideMenuControllerSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/XCGLogger/XCGLogger.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
