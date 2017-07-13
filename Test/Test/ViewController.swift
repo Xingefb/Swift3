@@ -93,39 +93,42 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
          4 班主任全班整体水平分析
          5 试卷知识点分析
          6 优秀学生答题方案分享
-    
+         7 解决教师繁琐的统计
+         
          方案成果
         
          1 重考试题乱序乱内容 重考成绩
          2 错点重错率
          3 成绩数据分析
          4 方案效果占预计的百分比
-  
+         
          
          */
-        self.view.backgroundColor = .red
+//        self.view.backgroundColor = .red
         
         let button = QMUILinkButton.init(frame: CGRect.init(x: 200, y: 200, width: 50, height: 200))
         button.underlineColor = UIColor.red
         button.setTitle("first", for: UIControlState.normal)
-        view.addSubview(button)
+//        view.addSubview(button)
         
         let btn = QMUIButton.init(frame: CGRect.init(x: 80, y: 80, width: 80, height: 80))
         btn.setTitle("hello", for: UIControlState.normal)
         btn.sizeToFit()
         btn.backgroundColor = UIColor.red
         btn.layer.cornerRadius = 10
-        view.addSubview(btn)
+//        view.addSubview(btn)
         
         let v = UIView.init(frame: CGRect.init(x: 70, y: 70, width: 80, height: 80))
         v.backgroundColor = .yellow
-        view.addSubview(v)
+//        view.addSubview(v)
 
-        let image = UIImageView.init(frame: CGRect.init(x: 60, y: 60, width: 60, height: 60))
-        image.image = TheImage.useFitImage(width: 60, height: 60)
+        let wh:CGFloat = 60
+        
+        let image = UIImageView.init(frame: CGRect.init(x: 60, y: 60, width: wh, height: wh))
+        image.image = TheImage.useFitImage(width: wh, height: wh)
         view.addSubview(image)
         
-        let image1 = UIImageView.init(frame: CGRect.init(x: 140, y: 60, width: 60, height: 60))
+        let image1 = UIImageView.init(frame: CGRect.init(x: 140, y: 60, width: wh, height: wh))
         image1.image = UIImage.init(named: "screenShot20170713At102217AM.png")
         image1.contentMode = .scaleAspectFit
         view.addSubview(image1)
